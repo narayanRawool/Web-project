@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Wedsite</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="navbar">
+    <nav>
+        <div class="logo">HOTEL MANGO</div>
+        <input type="checkbox" id="click">
+        <label for="click" >
+            <div class="menu-btn"></div>
+            <div class="menu-btn"></div>
+            <div class="menu-btn"></div>
+        </label>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Book_Table.html">Book A Table</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+    <div class="container">
+        <div class="contact_data2">
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <strong>Location:</strong>
+              <p>Pateshwar Complex, G-90, Main Rd, Sawantwadi, Maharashtra 416510</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <strong>Email:</strong>
+              <p>xyz@example.com</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <strong>Call:</strong>
+              <p>02363271041</p>
+            </li>
+          </ul>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15348.229949985927!2d73.81952799999999!3d15.9060589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbff5677d9aa3f3%3A0x6eb89ddc4be34c0c!2sHotel%20Mango!5e0!3m2!1sen!2sin!4v1706109756843!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact_data">
+          <h2>Contact Me</h2>
+          <form action="connect.php"method="post">
+            <label for="">Name</label>
+            <input type="text" name="Name"/>
+            <label for="">Email</label>
+            <input type="email" name="Email"/>
+            <label for="">Subject</label>
+            <input type="text" name="Subject"/>
+            <label for="">Message</label>
+            <textarea name="" id="" cols="30" rows="05"name="Message"></textarea>
+            <button>Send Message</button>
+          </form>
+        </div>
+      </div>
+    
+</body>
+</html>
