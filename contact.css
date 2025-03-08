@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar nav .logo{
+  font-size: 33px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 3px 3px 20px orange,
+    -2px 1px 30px #514e50;
+}
+
+.navbar nav{
+  height: 80px;       
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+  box-shadow: 0 2px 18px -1px orange;
+}
+
+.navbar nav .menu-btn{
+  width: 22px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+  display: none;
+}
+
+.navbar nav ul{
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Euphemia";
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar nav ul li{
+  margin: 0 5px;          
+}
+
+.navbar nav ul li a:hover,
+  .navbar nav ul li a.active{
+      color: #98e54c;
+      background: #fff;
+}
+
+body {
+  background: #0b0d0d;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .contact_data {
+  background: #fff;
+  width: 600px;
+  border-radius: 02px;
+  border-top: 04px solid #98e54c;
+  margin: 0 10px;
+}
+
+.container .contact_data form {
+  padding: 0 1rem;
+}
+
+.container .contact_data form input,
+textarea {
+  width: 95%;
+  margin: 05px 0 0 10px;
+  padding: 07px 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  border-radius: 05px;
+}
+
+.container .contact_data h2 {
+  margin: 1.5rem;
+  border-bottom: 0.2rem #98e54c solid;
+  width: 25%;
+}
+
+.container .contact_data label {
+  display: block;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.container .contact_data button {
+  margin: 20px 10px;
+  border: none;
+  padding: 10px 20px;
+  background: #98e54c;
+  font-size: 1rem;
+  border-radius: 05px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .contact_data button:hover {
+  background: black;
+  transition: 0.3s;
+  color: #98e54c;
+}
+
+.container .contact_data2 {
+  background: #fff;
+  border-radius: 02px;
+  border-top: 04px solid #98e54c;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.container .contact_data2 ul {
+  list-style: none;
+}
+
+.container .contact_data2 ul li {
+  margin: 1.5rem 1rem;
+}
+
+.container .contact_data2 ul li i {
+  font-size: 1.4rem;
+  color: #98e54c;
+}
+
+.container .contact_data2 ul li strong {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.container .contact_data2 ul li p {
+  font-size: 14px;
+  margin-left: 35px;
+}
+
+.container .contact_data2 .map iframe {
+  width: 90%;
+  height: 280px;
+  margin: 0 1rem;
+}
+
+
+::-webkit-scrollbar{
+  width: 0.833vw;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ffa366;
+  border-radius: 1.667vw;
+}
+
+
+
+
+@media (max-width: 1037px) {
+  .container .contact_data,
+  .contact_data2 {
+    width: 80%;
+    margin: 10px 0px;
+  }
+  .container .contact_data h2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .navbar nav ul{
+      position: fixed;
+      top: 65px;
+      left: -100%;
+      background: #111;
+      height: 1000vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+  }
+  #click:checked ~ ul{
+      left: 0%;
+      transition: all 0.3s ease;
+  }
+  .navbar nav ul li{
+      margin: 40px 0;
+  }
+  .navbar nav ul li a{
+      font-size: 20px;
+      display: block;
+  }
+  .navbar nav ul li a:hover,
+  .navbar nav ul li a.active{
+     color: #98e54c;
+     background: none;
+  }
+
+  .navbar nav .menu-btn{
+      display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .contact_data2 {
+    width: 75%;
+    margin: 10px 0px;
+  }
+  .container .contact_data h2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width : 430px) {
+  .navbar nav{
+      width: 100%;
+      height: 50px;       
+      padding: 0px 30px 0px 30px;      
+  }
+
+  .navbar nav .logo{
+      font-size: 30px;
+      font-weight: 400;
+  }
+
+  .navbar nav .menu-btn{
+      width: 20px;
+      height: 4px;
+      background-color: white;
+      margin: 4px 0;
+  }
+
+  .navbar nav ul{
+      top: 45px;
+  }
+}
